@@ -1,45 +1,48 @@
 package ar.edu.unq.po2.tp3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Counter {
-	
-	private ArrayList<Integer> numeros; 
-	
-	public Counter(ArrayList<Integer> numbers) {
-        this.numeros = numbers;
-    }
-	
-	public int contarPares() {
-        int count = 0;
-        for (Integer num : numeros) {
-            if (num % 2 == 0) {
-                count++;
-            }
-        }
-        return count;
-    }
-	
-	public int contarImpares() {
-        int count = 0;
-        for (Integer num : numeros) {
-            if (num % 2 != 0) {
-                count++;
-            }
-        }
-        return count;
-    }
-	
-	public int contarMultiplosDe(int n) {
-        int count = 0;
-        for (Integer num : numeros) {
-            if (num % n == 0) {
-                count++;
-            }
-        }
-        return count;
-    }
-}
+    private List<Integer> numeros;
 
+    public Counter() {
+        this.numeros = new ArrayList<>();
+    }
+
+    public void addNumber(int numero) {
+        this.numeros.add(numero);
+    }
+
+    public int contarPares() {
+        int pares = 0;
+        for (int n : numeros) {
+            if (n % 2 == 0) {
+                pares++;
+            }
+        }
+        return pares;
+    }
+
+    public int contarImpares() {
+        int impares = 0;
+        for (int n : numeros) {
+            if (n % 2 != 0) {
+                impares++;
+            }
+        }
+        return impares;
+    }
+
+    public int contarMultiplos(int divisor) {
+        int multiplos = 0;
+        for (int n : numeros) {
+            if (n % divisor == 0) {
+                multiplos++;
+            }
+        }
+        return multiplos;
+        
+    }
 }
 
