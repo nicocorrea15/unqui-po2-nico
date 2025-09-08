@@ -17,11 +17,12 @@ public class CounterTestCase {
         counter.addNumber(4);
         counter.addNumber(5);
         counter.addNumber(6);
+        counter.addNumber(22);
     }
 
     @Test
     public void testCountEven() {
-        assertEquals(3, counter.contarPares()); // 2,4,6 son pares
+        assertEquals(4, counter.contarPares()); // 2,4,6 son pares
     }
 
     @Test
@@ -37,6 +38,11 @@ public class CounterTestCase {
     @Test
     public void testCountMultiplesOf5() {
         assertEquals(1, counter.contarMultiplos(5)); // 5 es múltiplo de 5
+    }
+    
+    @Test
+    public void testSegundo() {
+    	assertEquals(4,counter.contarPares()); // caca 
     }
 }
 

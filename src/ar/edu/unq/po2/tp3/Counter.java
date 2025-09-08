@@ -42,7 +42,6 @@ public class Counter {
             }
         }
         return multiplos;
-        
-    }
+    }     
+    
 }
-
