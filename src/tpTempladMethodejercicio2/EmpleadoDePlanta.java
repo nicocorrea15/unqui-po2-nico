@@ -13,6 +13,6 @@ public class EmpleadoDePlanta extends Empleado {
 		return sueldoBasico + cantHijos * 150;
 	}
 	
-	public void carga() {}
+	public void carga() {} 
 
 }
